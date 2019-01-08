@@ -1,0 +1,32 @@
+﻿table, td, th, tr{
+	border:1px solid black;
+}
+table{
+	width:auto;
+}
+.tableAside {
+	animation: tableMove 1s normal;
+}
+td{
+	width:25%;
+	text-align:center;
+	padding:10px;
+}
+td > img:hover{
+	transform:scale(1.3, 1.3);
+	transition:transform 0.25s linear;
+}
+#goJS:hover{
+	cursor:pointer;
+}
+th{
+	padding:10px;
+}
+table tr:nth-child(odd) {
+	background-color: #ffe200;
+	background-color: rgba(251, 217, 84, 0.72);
+}
+@keyframes tableMove{
+	from {top:100px;}
+	to {top:0px;}
+}
